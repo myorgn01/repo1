@@ -1,0 +1,28 @@
+https://www.quora.com/What-are-the-best-devops-courses
+
+
+Token-Nov1 :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
+
+
+
+
+difference between bind mount and docker volume ?
+
+docker volume create vol-1
+docker volume inspect vol-1
+docker run -it -p 81:80 --name w1 --mount source=vol-1,destination=/var/www/html -d shashikantht/boxer
+docker volume inspect vol-1
+vol-1> ls
+--------------------------------------->
+mkdir demo1
+
+docker run -it -p 82:80 --name w2 -v /root/demo1:/var/www/html -d shashikantht/boxer
+
+
+ intial bind mount folder data copies to attached container
+
+--------------------------------------->
+mkdir demo2
+ git clone https://github.com/MYTCS-1/currency.git
+
+docker run -it -p 83:80 --name w3 -v /root/demo2:/var/www/html -d shashikantht/boxer
